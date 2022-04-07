@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt('Ваше первое число');
+        num1 = Number(num1);
+        alert( isFinite(num1));
+
+        let operator = prompt('Выберите оператор (/,+,*,-)');
+
+        let num2 = prompt('Ваше второе число');
+        num2 = Number(num2);
+        alert( isFinite(num2));
+
+
+        switch (operator) {
+            case '+':
+                alert(`Ваш результат ${num1 + num2}`);
+                break;
+            case '-':
+                alert(`Ваш результат ${num1 - num2}`);
+                break;
+            case '/':
+                alert(`Ваш результат ${num1 / num2}`);
+                break;
+            case '*':
+                alert(`Ваш результат ${num1 * num2}`);
+            default:
+                alert( "Такой операции не существует" );
+        }
+    </script>
+</body>
+</html>
